@@ -1,0 +1,18 @@
+
+
+.logoImage{
+    padding-left: 10%;
+    padding-right: 40%;
+    height: 30px;
+}
+.btnContainer{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.headerContainer{
+width: 100%;
+    position: sticky;
+    top: 0;
+    
+}
