@@ -2,12 +2,12 @@ import React from 'react'
 import './newButton.css'
 import 'animate.css';
 
-export default function NewButton() {
+export default function NewButton(props) {
   return (
    
     <div class="btnsContainer">
 
-        <button className='btnHome'>BUTTON</button>
+       <button className='btnHome'>{props.text}</button>
 
     </div>
   )

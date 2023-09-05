@@ -11,7 +11,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     
 }
 .detailBox{
-    flex: 8;
+    flex: 7;
     /* background-color: red; */
     height: 100%;
 }
@@ -42,7 +42,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .nameTitle{
     margin-top: 1%;
     margin-left: 15%;
-    width: 60%;
+    width: 80%;
     color:#00bfff;
     font-family: sans-serif;
     font-weight: 500;
@@ -93,4 +93,7 @@ background: linear-gradient(90deg, rgba(131, 58, 180, 0.726) 0%, rgba(253, 29, 2
     display: flex;
     justify-content: space-around;
     /* flex-direction: row; */
+}
+.buttonsContainer>.text-deco{
+    text-decoration: none;
 }

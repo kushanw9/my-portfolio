@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import './header.css'
+import { LinkContainer } from 'react-router-bootstrap'; 
 
 
 export default function Header() {
@@ -19,11 +20,19 @@ export default function Header() {
             <Container>
           
             <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#abuot">About</Nav.Link>
-                <Nav.Link href="#works">Works</Nav.Link>
-                <Nav.Link href="#contact">Contact</Nav.Link>
-                <Nav.Link href="#blogs">Blogs</Nav.Link>
+            <LinkContainer to="/">
+                <Nav.Link>Home</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/about">
+                <Nav.Link>About</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/works">
+                <Nav.Link>Works</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/contact">
+                <Nav.Link>Contact</Nav.Link>
+              </LinkContainer>
+              <Nav.Link href="#blogs">Blogs</Nav.Link>
                 <div className="btnContainer"><Button size='sm' className='btnHire' variant="outline-warning">Hire Me</Button>{' '}</div>
                 
             </Nav>

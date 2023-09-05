@@ -2,6 +2,7 @@ import React from 'react'
 import './homeBody.css'
 // import Button from 'react-bootstrap/Button';
 import Newbutton from '../NewButton/NewButton';
+import { Link } from 'react-router-dom';
 
 export default function HomeBody() {
   return (
@@ -26,8 +27,8 @@ export default function HomeBody() {
         </div>
 
         <div className="buttonsContainer">
-            <Newbutton/>
-            <Newbutton/>
+          <Link className='text-deco' to="/works"><Newbutton text="My Works"/></Link>
+          <Link className='text-deco' to="/about"><Newbutton text="About Me"/></Link>
            
                         
         </div>

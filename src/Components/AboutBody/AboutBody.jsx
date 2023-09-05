@@ -1,6 +1,7 @@
 import React from 'react'
 import './aboutBody.css'
 import Newbutton from '../NewButton/NewButton';
+import { Link } from 'react-router-dom';
 
 export default function AboutBody() {
   return (
@@ -22,8 +23,8 @@ export default function AboutBody() {
 
         </div>
         <div className="btnContainerAtAbout">
-            <Newbutton/>
-            <Newbutton/>
+            <Link className='text-deco' to={"/works"}><Newbutton text="View Projects"/></Link>
+            <a className='text-deco' href='https://github.com/kushanw9?tab=repositories'><Newbutton text="All Projects"/></a>
 
         </div>
         
